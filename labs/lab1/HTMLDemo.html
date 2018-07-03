@@ -1,0 +1,55 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "=//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1-strict.dtd">
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+	<title>Sample form to take user input in XHTML</title>
+	<style type="text/css">
+	.prompt{
+		color:blue;
+		font-family: sans-serif;
+		font-size: smaller}
+	</style>
+</head>
+<body>
+	<h1>Smaple Registration Form</h1>
+	<p>Please fill in all fields and click Register.</p>
+
+	<!-- post form data to form.php -->
+	<form method = "post"action = "form.php">
+	<div>
+		<span class="prompt">姓名:</span>
+		<input type = "text"name ="fname" /><br />
+		<br />
+
+		<span class ="prompt"> 學號:</span>
+		<input type = "text"name = "fid" /><br />
+		<br />
+
+		<span class ="prompt">Which number do you guess?</span><br />
+		<br />
+
+		<select name = "fnumber">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+		</select>
+		<br />
+		<br />
+
+		<!--create a submit button-->
+		<input type="submit"value = "送出"/>		
+	</div>
+	</form>
+</body>
+</html>
